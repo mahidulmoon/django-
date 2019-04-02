@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<nav class="nav">
+  <a class="nav-link active" href="#">NAVBAR</a> | <a class="nav-link" href="{% url 'register' %}">Registration</a> | <a class="nav-link" href="{% url 'login' %}">login</a> | <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+</nav>
+
+</body>
+</html>
